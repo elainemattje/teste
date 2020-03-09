@@ -1,0 +1,38 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+}
+
+.top{
+    background-image: url(../Images/Cloud.png);
+    background-repeat: no-repeat;
+    /* position: relative; */
+    margin: 0px;
+    width: 100%;
+}
+.top.azure{
+    /* position: absolute; */
+    /* top: 30%; */
+   
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.politics{
+    background-image: url(../Images/Night.png);
+    background-repeat: no-repeat;
+    color: white;
+}
+.search{
+    fill:white;
+		stroke: white;
+		stroke-width: 5;
+}
