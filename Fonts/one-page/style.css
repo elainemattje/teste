@@ -2,37 +2,122 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    
 }
-
+body{
+    background-image: url(../Images/Background.png);
+    width: 100%;
+    z-index: 2;
+}
 h1{
     color: white;
 }
-
 .top{
-    background-image: url(../Images/Cloud.png);
+    background-image: url(../Images/Azure.jpg);
     background-repeat: no-repeat;
-    /* position: relative; */
-    margin: 0px;
-    width: 100%;
-}
-.top.azure{
-    /* position: absolute; */
-    /* top: 30%; */
-   
+    background-size: cover;
+    width: 98%;
+    height: 700px;
+    margin: 1% 1% 0 1%;
 }
 .top-nav{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    width: 98%;
+    margin: 0 1%;
 }
-
 .politics{
     background-image: url(../Images/Night.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
     color: white;
+    width: 98%;
+    height: 502px;
+    margin: 0 1%;
 }
-.search{
-    fill:white;
-		stroke: white;
-		stroke-width: 5;
+.politics-title--p{
+    font-family: 'Lato', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #cab500;
+    padding: 80px 0 0 260px;
+}
+.politics-title--g{
+    font-family: 'Lato', sans-serif;
+    font-size: 60pt;
+    font-weight: bold;
+    letter-spacing: 4px;
+    line-height: 80px;
+    color: #ffffff;
+    padding: 0 203px 0 260px;
+}
+.text{
+    background-color: white;
+    width: 98%;
+    height: 946px;
+    margin: 0 1%;
+    display: flex;
+    flex-flow: row-reverse;
+}
+.text-article{
+    width: 75%;
+    
+}
+.text-footer{
+    width: 25%;
+    padding: 50px 30px 0 180px; 
+}
+.text-long{
+    font-family: 'Playfair Display', serif;
+    font-size: 16pt;
+    font-weight: normal;
+    letter-spacing: 2pt;
+    line-height: 20pt;
+    color: #333333;
+    padding: 50px 420px 0 25px;
+}
+.text-selected{
+    font-family: 'Lato', sans-serif;
+    font-size: 30pt;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: #333333;
+    padding: 0px 203px 0px 200px;
+}
+.aspas{
+    padding: 45px 450px 45px 450px; 
+}
+.author{
+    font-family: 'Playfair Display', serif;
+    font-size: 13pt;
+    font-weight: normal;
+    color: #2e2a28;
+}
+.author-by{
+    color: rgb(153, 149, 149);
+}
+.line{
+    padding: 30px 0;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+.border{
+    position: relative;
+    
+}
+.icon{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.img-tree{
+    /* background-image: url(../Images/Tree.png); */
+    width: 98%;
+    margin: 0 1%;
 }
