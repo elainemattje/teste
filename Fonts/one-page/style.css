@@ -7,6 +7,7 @@
 body{
     background-image: url(../Images/Background.png);
     width: 100%;
+    margin: 2%;
     z-index: 2;
 }
 .page-logo{
@@ -16,10 +17,9 @@ body{
     background-position: center center;
     background-attachment: unset;
     width: 96%;
-    height: 250px;
-    margin: 2% 2% 0 2%;
+    height: 250px;    
 }
-.page-logo-top--nav{
+.page-logo-top__nav{
     display: flex;
     justify-content: space-between;
     padding: 1.5%;
@@ -31,106 +31,67 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
-    width: 96%;
-    height: 200px;
-    margin: 0 2%;
-}
-.page-title--p{
+    width: 100%;
+    padding: 30px 40px;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.page-title__p{
     font-size: 8px;
-    font-weight: bold;
     color: #cab500;
-    padding: 50px 50px 0 40px;
 }
-.page-title--g{
-    font-family: 'Lato', sans-serif;
+.page-title__g{
     font-size: 20px;
-    font-weight: bold;
     letter-spacing: 3px;
     line-height: 30px;
     color: #ffffff;
-    padding: 0 10px 0 20px;
 }
-.page-content-top{
+.page-content{
     height: auto;
     background-color: white;
     width: 96%;
-    margin: 0 2%;
-    padding-bottom: 20px;
+    padding: 30px 30px 20px 30px;
+    color: #333333;
+    font-weight: normal;
 }
-.page-content-top-text-article{
-    width: 96%;
-    padding: 30px 30px 0 30px;
-}
-.page-content-top-text-footer{
-    width: 96%;
-    padding: 10px 30px 0 30px; 
-}
-.text-long{
+.page-content__text-long{
     font-family: 'Playfair Display', serif;
     font-size: 16px;
-    font-weight: normal;
     letter-spacing: 0pt;
     line-height: 20pt;
-    color: #333333;
+    padding: 20px 0 20px 0;
 }
-.text-long-content-top{
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    font-weight: normal;
-    letter-spacing: 0pt;
-    line-height: 20pt;
-    color: #333333;
-    padding-top: 20px;
-
-}
-.text-long-content-bottom{
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    font-weight: normal;
-    letter-spacing: 0pt;
-    line-height: 20pt;
-    color: #333333;
-    padding-bottom: 20px;
-
-}
-.text-selected-content-top{
+.page-content__text-selected{
     font-family: 'Lato', sans-serif;
     font-size: 30px;
-    font-weight: normal;
     letter-spacing: 1.5px;
-    color: #333333;
     text-align: center;
-    /* padding: 0px 203px 0px 200px; */
 }
-.text-selected-content-bottom{
-    font-family: 'Lato', sans-serif;
+.content__text-selected--bottom{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #333333;
-    padding: 25px 10px 25px 0;
 }
-.img-aspas{
+.marks{
     margin: 5% 45%;
 }
-.content-top-text-footer-author{
+.page-content__text-footer{
     font-family: 'Playfair Display', serif;
     font-size: 13px;
     font-weight: normal;
     color: #2e2a28;
+    width: 50%;
+    border-bottom: 2px solid rgb(221, 218, 218);
+    padding: 0 0 10px 0;
 }
-.content-top-text-footer-author-by{
+.page-content__text-footer--author-by{
     color: rgb(153, 149, 149);
 }
-.page-content-top-text-footer-line{
-    padding: 10px 0;
-}
-.page-content-top-text-footer-social{
+.page-content__text-footer--social{
     display: flex;
     justify-content: space-between;
     width: 120px;
+    padding-top: 10px;
 }
 .banner-tree{
     background-image: url(../Images/Tree.png);
@@ -138,29 +99,20 @@ body{
     background-size: cover;
     background-position: center center;
     width: 96%;
-    margin: 0 2% 0 2%;
     height: 200px;
-}
-.page-content-bottom{
-    height: auto;
-    background-color: white;
-    width: 96%;
-    margin: 0 2%;
-    padding: 30px 30px 0 30px;
 }
 .page-footer{
     height: auto;
     background-color: white;
     width: 96%;
-    margin: 0 2% 2% 2%;
     padding: 10px 0 10px 3%;
 }
-.page-footer-options{
+.page-footer__options{
     display: flex;
     justify-content: center;
     margin: 0;
 }
-.page-footer-options-button{
+.page-footer__options--button{
     text-decoration: none;
     border: 1px solid #d9dcdf;
     background-color: #d9dcdf;
@@ -174,7 +126,7 @@ body{
     padding: 5px 5px;
     margin: 0 5px 10px 0;
 }
-.page-footer-share{
+.page-footer__share{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,28 +138,29 @@ body{
     padding: 10px 0 20px 5px;
     width: 92%;
 }
-.page-footer-comments{
+.page-footer__comments{
     font-family: 'Lato', sans-serif;
     font-size: 14pt;
     font-weight: normal;
     letter-spacing: 3px;
     color: #757a7f;
-    padding: 0 203px 0 25px;
+    padding: 0 25px 0 25px;
+    width: 80%;
+    height: auto;
+    border-bottom: 2px solid rgb(221, 218, 218);
+    margin: 0 10px 0 25px;
 }
-.page-footer-line-comments{
-    width: 96%;
-}
-.page-footer-comments-author{
+.page-footer__comments--author{
     display: flex;
     flex-direction: row;
-    padding: 30px 0;
+    padding: 20px 0;
 }
-.page-footer-comments-author-data{
+.page-footer__comments--author-data{
     display: flex;
     justify-content: start;
     margin: 0;
 } 
-.page-footer-comments-author-data-name{
+.page-footer__comments--author-data-name{
     font-family: 'Lato', sans-serif;
     font-size: 10px;
     font-weight: bold;
@@ -215,7 +168,7 @@ body{
     color: #333333;
     padding: 0 0 20px 50px;
 }
-.page-footer-comments-author-description{
+.page-footer__comments--author-description{
     font-family: 'Playfair Display', serif;
     font-size: 13px;
     font-weight: normal;
@@ -224,7 +177,7 @@ body{
     padding: 0 0 0 50px;
     width: 100%;
 }
-.page-footer-comments-author-your_comment{
+.page-footer__comments--author-your_comment{
     font-family: 'Playfair Display', serif;
     font-size: 13px;
     letter-spacing: 0px;

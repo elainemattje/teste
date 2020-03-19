@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.scss" /> -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sass source/stylesheets/index.scss">
     <title>Document</title>
 </head>
 
 <body>
-    <header class="page-logo">
-        <div class="page-logo-top">
-            <nav class="page-logo-top--nav">
+    <header>
+        <div class="page-logo">
+            <nav class="page-logo-top__nav">
                 <img class="search" src="../Icons/menu.png" alt="">
                 <img class="search" src="../Icons/search.png" alt="">
             </nav>
@@ -20,21 +22,17 @@
     </header>
     <main>
         <section class="page-title">
-            <div>
-                <p class="page-title--p">Politics</p>
-            </div>
-            <div class="page-title--g">
-                <p class="page-title--g">Cameron Set to Return With U.K. Majority as SNP Sweeps Scotland</p>
-            </div>
+                <p class="page-title__p">Politics</p>
+                <p class="page-title__g">Cameron Set to Return With U.K. Majority as SNP Sweeps Scotland</p>
         </section>
-        <section class="page-content-top">
-            <div class="page-content-top">
-                <article class="page-content-top-text-article">
-                    <p class="text-long">David Cameron is poised to return as U.K. prime minister after steering his
+        <section>
+            <div class="page-content">
+                <article>
+                    <p class="page-content__text-long">David Cameron is poised to return as U.K. prime minister after steering his
                         Conservatives to an
                         unexpected majority, helped by a landslide for nationalists in Scotland at Labour’s expense.
                     </p>
-                    <p class="text-long-content-top">
+                    <p class="page-content__text-long">
                         The pound jumped as projections of the final tally in the British general election indicated
                         that
                         the Conservatives had defied opinion polls to easily defeat Ed Miliband’s Labour Party. With
@@ -44,11 +42,11 @@
                         seats, a result that would allow Cameron to ditch his Liberal Democrat coalition partner of the
                         past
                         five years and govern alone.</p>
-                    <img class="img-aspas" src="../Images/aspas_c.png" alt="">
-                    <p class="text-selected-content-top"><strong>The Sweetest </strong><em>Victory</em> <strong>of
+                    <img class="marks" src="../Images/aspas_c.png" alt="">
+                    <p class="page-content__text-selected"><strong>The Sweetest </strong><em>Victory</em> <strong>of
                             All</strong></p>
-                    <img class="img-aspas" src="../Images/aspas_b.png" alt="">
-                    <p class="text-long-content-bottom">Cameron hailed the election outcome as the “the sweetest victory
+                    <img class="marks" src="../Images/aspas_b.png" alt="">
+                    <p class="page-content__text-long">Cameron hailed the election outcome as the “the sweetest victory
                         of
                         all”
                         and a vindication of
@@ -63,21 +61,22 @@
                         the
                         integrity of the United Kingdom just eight months after Scots voted “No” to independence.</p>
                 </article>
-                <footer class="page-content-top-text-footer">
-                    <p class="content-top-text-footer-author-by">by</p>
-                    <p class="content-top-text-footer-author">Robert Hutton,</p>
-                    <p class="content-top-text-footer-author">Svenja O´Donnell</p>
-                    <p class="content-top-text-footer-author">and Thomas Penny</p>
-                    <img class="page-content-top-text-footer-line" src="../Images/Line.png" alt="">
-                    <div class="page-content-top-text-footer-social">
+                <footer>
+                    <div class="page-content__text-footer">
+                        <p class="page-content__text-footer--author-by">by</p>
+                        <p>Robert Hutton,</p>
+                        <p>Svenja O´Donnell</p>
+                        <p>and Thomas Penny</p>
+                    </div>
+                    <div class="page-content__text-footer--social">
                         <div>
-                            <img class="page-content-top-text-footer-social-border" src="../Icons/fc.png" alt="">
+                            <img src="../Icons/fc.png" alt="">
                         </div>
                         <div>
-                            <img class="page-content-top-text-footer-social-border" src="../Icons/t.png" alt="">
+                            <img src="../Icons/t.png" alt="">
                         </div>
                         <div>
-                            <img class="page-content-top-text-footer-social-border" src="../Icons/g.png" alt="">
+                            <img src="../Icons/g.png" alt="">
                         </div>
                     </div>
                 </footer>
@@ -85,10 +84,10 @@
         </section>
         <div class="banner-tree">
         </div>
-        <section class="page-content-top">
-            <div class="page-content-bottom">
-                <article class="page-content-bottom-text-article">
-                    <p class="text-long">With Cameron immediately renewing his pledge to hold a referendum
+        <section class="page-content">
+            <div>
+                <article>
+                    <p class="page-content__text-long">With Cameron immediately renewing his pledge to hold a referendum
                         on British
                         membership
                         of the European
@@ -99,8 +98,8 @@
                         defied forecasts of a hung parliament to easily defeat Ed Miliband’s Labour Party and govern
                         alone.
                     </p>
-                    <h2 class="text-selected-content-bottom">Buckingham Palace</h2>
-                    <p class="text-long">The premier was meeting with Queen Elizabeth II at Buckingham Palace as the
+                    <h2 class="page-content__text-selected--bottom">Buckingham Palace</h2>
+                    <p class="page-content__text-long">The premier was meeting with Queen Elizabeth II at Buckingham Palace as the
                         Conservatives reached the
                         326-seat threshold that allows them
                         to ditch their Liberal Democrat coalition partners and govern alone
@@ -110,50 +109,49 @@
         </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer-options">
-            <a class="page-footer-options-button" href="#">MARKETS</a>
-            <a class="page-footer-options-button" href="#">BUSINESS</a>
-            <a class="page-footer-options-button" href="#">SPORT</a>
-            <a class="page-footer-options-button" href="#">SPECIAL REPORTS</a>
-            <a class="page-footer-options-button" href="#">CULTURE</a>
+        <div class="page-footer__options">
+            <a class="page-footer__options--button" href="#">MARKETS</a>
+            <a class="page-footer__options--button" href="#">BUSINESS</a>
+            <a class="page-footer__options--button" href="#">SPORT</a>
+            <a class="page-footer__options--button" href="#">SPECIAL REPORTS</a>
+            <a class="page-footer__options--button" href="#">CULTURE</a>
         </div>
-        <div class="page-footer-share">
-            <p class="page-footer-share">SHARE:</p>
-            <img class="page-footer-share" src="../Icons/f.png" alt="">
-            <img class="page-footer-share" src="../Icons/tw.png" alt="">
-            <img class="page-footer-share" src="../Icons/g+.png" alt="">
+        <div class="page-footer__share">
+            <p>SHARE:</p>
+            <!-- <a class="page-footer-share__button" href="#"><img class="page-footer-share__button" src="../font-awesome-4.3.0/fa-cc" alt="">125</a> -->
+            <img src="../Icons/f.png" alt="">
+            <img src="../Icons/tw.png" alt="">
+            <img src="../Icons/g+.png" alt="">
         </div>
-        <div class="page-footer-comments">
+        <div class="page-footer__comments">
             <p>Comments</p>
-            <img class="page-footer-line-comments" src="../Images/Line-comments.png" alt="">
-            <div class="page-footer-comments-author">
-                <div class="page-footer-comments-author-img">
+            <div class="page-footer__comments--author">
+                <div class="page-footer__comments--author-img">
                     <img src="../Images/Author_photo1.png" alt="">
                 </div>
                 <div>
-                    <div class="page-footer-comments-author-data">
-                        <p class="page-footer-comments-author-data-name">JOHN DOE</p>
-                        <img class="page-footer-comments-author-data-name" src="../Icons/Date.png" alt="">
+                    <div class="page-footer__comments--author-data">
+                        <p class="page-footer__comments--author-data-name">JOHN DOE</p>
+                        <img class="page-footer__comments--author-data-name" src="../Icons/Date.png" alt="">
                     </div>
-                    <div class="page-footer-comments-author-description">
+                    <div class="page-footer__comments--author-description">
                         <p>While Cameron has had a great night, I suspect his problems in some way have only just begun.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="page-footer-comments">
-            <img class="page-footer-line-comments" src="../Images/Line-comments.png" alt="">
-            <div class="page-footer-comments-author">
-                <div class="page-footer-comments-author-img">
+        <div class="page-footer__comments">
+            <div class="page-footer__comments--author">
+                <div class="page-footer__comments--author-img">
                     <img src="../Images/Author_photo2.png" alt="">
                 </div>
                 <div>
-                    <div class="page-footer-comments-author-data">
-                        <p class="page-footer-comments-author-data-name">ALLON POE</p>
-                        <img class="page-footer-comments-author-data-name" src="../Icons/Date2.png" alt="">
+                    <div class="page-footer__comments--author-data">
+                        <p class="page-footer__comments--author-data-name">ALLON POE</p>
+                        <img class="page-footer__comments--author-data-name" src="../Icons/Date2.png" alt="">
                     </div>
-                    <div class="page-footer-comments-author-description">
+                    <div class="page-footer__comments--author-description">
                         <p>The debate over EU membership is likely to come up pretty quickly and could prove a
                             significant distraction for business and government.
                         </p>
@@ -161,17 +159,15 @@
                 </div>
             </div>
         </div>
-        <div class="page-footer-comments">
-            <img class="page-footer-line-comments" src="../Images/Line-comments.png" alt="">
-            <div class="page-footer-comments-author">
-                <div class="page-footer-comments-author-img">
+        <div class="page-footer__comments">
+            <div class="page-footer__comments--author">
+                <div class="page-footer__comments--author-img">
                     <img src="../Images/Author_photo3.png" alt="">
                 </div>
-                <div class="page-footer-comments-author-data">
-                    <p class="page-footer-comments-author-your_comment"><em>Your comment...</em></p>
+                <div class="page-footer__comments--author-data">
+                    <p class="page-footer__comments--author-your_comment"><em>Your comment...</em></p>
                 </div>
             </div>
-            <img class="page-footer-line-comments" src="../Images/Line-comments.png" alt="">
         </div>
         </div>
     </footer>
