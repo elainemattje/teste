@@ -1,0 +1,141 @@
+.page-content {
+  height: auto;
+  background-color: white;
+  width: 100%;
+  padding: 30px 30px 20px 30px;
+  color: #333333;
+  font-weight: normal;
+  box-sizing: border-box;
+
+  &__text-long {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    letter-spacing: 0pt;
+    line-height: 20pt;
+    padding: 20px 0 20px 0;
+  }
+  &__text-selected {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+  .content__text-selected--bottom {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .marks {
+    margin: 5% 45%;
+  }
+  &__authors {
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #2e2a28;
+    width: 35%;
+    padding: 0 0 10px 0;
+  }
+  &__text-footer--author-by {
+    color: rgb(153, 149, 149);
+  }
+  &__social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    padding-top: 10px;
+    width: 40%;
+    border-top: 2px solid rgb(221, 218, 218);
+
+    &--icons {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid rgb(230, 225, 225);
+      position: relative;
+
+      .networks--social {
+        position: absolute;
+        margin: 30% 35%;
+        font-size: 12px;
+        color: rgb(197, 197, 197);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row-reverse;
+
+    &--bottom {
+      padding: 0 30px 0 18%;
+      width: 100%;
+    }
+
+    &__text-long {
+      width: 75%;
+      padding: 50px 80px 0 80px;
+      font-size: 20px;
+    }
+    &__authors {
+      width: 100px;
+      margin: 50px 0 0 20px;
+    }
+    &__social-media {
+      width: 100px;
+      margin: 10px 0 0 20px;
+    }
+    &__text-selected--bottom {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 50px 80px 0 80px;
+    }
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 10px 280px 40px 0;
+
+    &--bottom {
+      padding: 0 30px 0 250px;
+      width: 100%;
+    }
+    &__text-long {
+      font-size: 18px;
+      line-height: 25pt;
+      width: 75%;
+      margin: 0 0 0 5%;
+    }
+    &__authors {
+      font-size: 13pt;
+      width: 60%;
+      margin: 50px 0 0 100px;
+    }
+    &__social-media {
+      width: 150px;
+      margin: 10px 0 0 100px;
+    }
+    &__text-selected--bottom {
+      font-size: 27px;
+      padding: 25px 0 0 115px;
+    }
+    .marks {
+      margin: 5% 45% 1% 48%;
+    }
+  }
+}
+.banner-tree {
+  background-image: url(../assets/Images/Tree.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: 768px) {
+    height: 350px;
+  }
+  @media (min-width: 1024px) {
+    height: 500px;
+  }
+}

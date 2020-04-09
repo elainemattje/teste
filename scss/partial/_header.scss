@@ -1,0 +1,32 @@
+header {
+  .page-logo {
+    background-image: url(../assets/Images/Azure.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: unset;
+    height: 250px;
+    width: 100%;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      height: 500px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 700px;
+    }
+
+    &-top__nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 2%;
+      margin: 0 2%;
+    }
+
+    .fa-bars,
+    .fa-search {
+      color: white;
+    }
+  }
+}
