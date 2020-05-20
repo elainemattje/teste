@@ -12,7 +12,12 @@
 
   &__subtitle {
     font-size: 8px;
+    font-weight: bold;
     color: #cab500;
+
+    @media (min-width: 576px) {
+      padding: 0 100px 0px 130px;
+    }
 
     @media (min-width: 768px) {
       font-size: 10pt;
@@ -30,6 +35,11 @@
     letter-spacing: 2px;
     line-height: 30px;
     color: #ffffff;
+
+    @media (min-width: 576px) {
+      font-size: 30px;
+      padding: 0 100px 50px 130px;
+    }
 
     @media (min-width: 768px) {
       font-size: 40px;
